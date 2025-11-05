@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kingline | Direction Confirmation & Retracement Entry</title>
+<style>
+:root {
+  --bg:#14121A;--panel:#1d1a24;--border:#2a2733;--text:#e6e6e6;
+  --muted:#8a8a8a;--gold:#D4AF37;--green:#10b981;--red:#ef4444;
+}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Inter",sans-serif;}
+nav{display:flex;justify-content:center;gap:1rem;padding:0.75rem 0;background:var(--panel);
+border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10;}
+nav a{color:var(--gold);text-decoration:none;padding:0.5rem 1.25rem;border-radius:6px;
+font-weight:600;transition:all .2s ease;}
+nav a:hover{background:rgba(212,175,55,0.15);box-shadow:0 0 8px rgba(212,175,55,0.4);}
+.container{max-width:1200px;margin:auto;padding:1.5rem;}
+h1{font-size:1.8rem;color:var(--gold);font-weight:700;}
+h2{color:var(--gold);font-size:1.3rem;margin-top:1.5rem;}
+.table{width:100%;border-collapse:collapse;margin-top:1rem;font-size:0.95rem;}
+.table th,.table td{border:1px solid var(--border);padding:0.6rem;text-align:center;}
+.table th{background:rgba(212,175,55,0.1);color:var(--gold);}
+.table tr:nth-child(even){background:rgba(255,255,255,0.03);}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:1rem;margin-top:1rem;}
+.bullish{color:var(--green);font-weight:600;}
+.bearish{color:var(--red);font-weight:600;}
+.note{background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.4);border-radius:8px;
+padding:1rem;margin-top:1rem;color:var(--gold);}
+footer{margin-top:2rem;border-top:1px solid var(--border);color:var(--muted);
+font-size:0.8rem;text-align:center;padding-top:1rem;}
+@media(max-width:600px){.table th,.table td{font-size:0.8rem;padding:0.4rem;}}
+</style>
+</head>
+<body>
+<nav><a href="index.html">🏠 Home</a></nav>
+
+<div class="container">
+<h1>📊 Direction Confirmation & Retracement Entry Framework</h1>
+
+<div class="card">
+  <h2>1️⃣ Bullish Confirmation Structure</h2>
+  <table class="table">
+    <thead><tr><th>Phase</th><th>Expected Behavior</th><th>Entry Trigger</th><th>Exit Logic</th></tr></thead>
+    <tbody>
+      <tr><td>Pre‑Market</td><td>Liquidity below previous low removed</td><td class="bullish">Focus on long bias</td><td>Wait for session open confirmation</td></tr>
+      <tr><td>Session Start (09:30‑10:15)</td><td>Forms Extreme Low / First Impulse Peak</td><td class="bullish">Retracement into OTE zone + displacement up</td><td>Secure partials at mid‑range</td></tr>
+      <tr><td>Mid‑Session</td><td>Retracement completion ≈ 40‑60%</td><td>Confluence with VWAP / FVG support</td><td>Trail stops to structure low</td></tr>
+      <tr><td>NY PM Continuation</td><td>Re‑acceleration post‑lunch</td><td>Break of retracement high</td><td>Exit before 15:50 close</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <h2>2️⃣ Bearish Confirmation Structure</h2>
+  <table class="table">
+    <thead><tr><th>Phase</th><th>Expected Behavior</th><th>Entry Trigger</th><th>Exit Logic</th></tr></thead>
+    <tbody>
+      <tr><td>Pre‑Market</td><td>Liquidity above previous high removed</td><td class="bearish">Focus on short bias</td><td>Confirm orderflow via session open</td></tr>
+      <tr><td>Session Start (09:30‑10:45)</td><td>Forms Extreme High / Impulse Low</td><td class="bearish">Retracement to OTE zone + displacement down</td><td>Take partials at 50% range</td></tr>
+      <tr><td>Mid‑Session</td><td>Retracement ≈ 50‑70% typical</td><td>Confluence with FVG / previous support flip</td><td>Trail above retracement high</td></tr>
+      <tr><td>NY PM Continuation</td><td>Late‑day breakdown 11:00‑14:00</td><td>Break of retracement low</td><td>Exit before 15:50 close</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <h2>3️⃣ Retracement Entry Checklist</h2>
+  <table class="table">
+    <thead><tr><th>Condition</th><th>Reasoning</th><th>Applies To</th></tr></thead>
+    <tbody>
+      <tr><td>Extreme formed in first 60 min</td><td>Initial impulse defines daily bias</td><td>Both Bull & Bear</td></tr>
+      <tr><td>Retracement depth ≈ 40‑60%</td><td>Statistically optimal re‑entry zone</td><td>Both Bull & Bear</td></tr>
+      <tr><td>Time alignment with session transition</td><td>Confluence with CISD or NY AM → NY PM</td><td>Both</td></tr>
+      <tr><td>Liquidity sweep + displacement</td><td>Confirm orderflow shift</td><td>Both</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="note">
+📘 Guideline Summary:<br>
+Bullish retracements usually complete before 12:00 and continue into NY PM highs.<br>
+Bearish retracements are deeper and complete later (11:00‑13:00). Confirm with volume expansion + displacement direction.
+</div>
+
+<footer>© 2025 Kingline Capital | Direction Confirmation & Retracement Entry</footer>
+</div>
+</body>
+</html>
